@@ -11,6 +11,7 @@ import WelcomeComponent from './welcome.component'
 
 
 import './home.page.scss'
+import SkillsComponent from './skills.component'
 
 
 
@@ -38,6 +39,10 @@ const HomePage = () => {
         <VSpacerComponent space={8} />
 
         {/* tools */}
+        <SectionTitleComponent title="SKILLS" />
+        <VSpacerComponent space={2} />
+        <SkillsComponent />
+        <VSpacerComponent space={8} />
 
 
         {/* contact */}
