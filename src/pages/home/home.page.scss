@@ -1,1 +1,48 @@
 @import '../../styles/commons';
+
+
+
+
+
+.contact {
+
+    // background-color: $TERTIARY_COLOR;
+
+    
+    @media screen and (max-width: 880px) {
+        padding: 5vh 15vw;
+    }
+    @media screen and (min-width: 880px) {
+        padding: 5vh 20vw;
+    }
+    @media screen and (min-width: 1080px) {
+        padding: 5vh 26vw;
+    }
+}
+
+.contact_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+
+    padding: 1rem 2rem;
+
+    border-radius: 10px;
+
+    margin-bottom: 8vh;
+
+    background-color: $PRIMARY_COLOR;
+
+    transition: 300ms;
+
+    p {
+        margin-left: 1rem;
+    }
+ 
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0px 2px 20px 5px #dde7d9;
+    }
+}
