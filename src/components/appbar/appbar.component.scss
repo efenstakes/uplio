@@ -1,6 +1,11 @@
 @import '../../styles/commons';
 
 
+
+.appbar_md {
+    background-color: $WHITE_COLOR;
+}
+
 .appbar_action {
     @extend .appbar_action;
     margin: 0 2rem;

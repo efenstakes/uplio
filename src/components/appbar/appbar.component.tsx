@@ -11,7 +11,7 @@ import EmailIcon from '@mui/icons-material/Email'
 
 const AppbarComponent = () => {
   return (
-    <div className='appbar padded_container row ma_space_btn ca_center'>
+    <div className='appbar_md padded_container row ma_space_btn ca_center'>
         
         <p className="appbar__title text_4 bold">
             FELIX
