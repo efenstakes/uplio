@@ -1,4 +1,4 @@
-import './project_card.component.scss'
+import clsx from 'clsx'
 
 
 // models
@@ -9,12 +9,22 @@ import VSpacerComponent from '../v_spacer/v_spacer.component'
 
 
 
+import './project_card.component.scss'
+
+
 type ComponentProps = {
     project: Project
+    animationIndex?: number
 }
-const ProjectCardComponent = ({ project }: ComponentProps) => {
+const ProjectCardComponent = ({ project, animationIndex }: ComponentProps) => {
     return (
-        <div className='project_card'>
+        <div 
+            className={
+                clsx([
+                    'project_card', [`su_${animationIndex}`]
+                ])
+            }
+        >
             
             <div className='project_card__image_container'>
                 <img 

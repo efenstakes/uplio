@@ -144,6 +144,7 @@ const ProjectsComponent = () => {
                                         'chip_md', 
                                         'text_7', 
                                         'chip_rounded',
+                                        [`fd_${20+(index+2)}`],
                                         {
                                             'chip_outlined': isSelected,
                                             'projects__container__chip_list__chip__outlined': isSelected,
@@ -170,6 +171,7 @@ const ProjectsComponent = () => {
                             <ProjectCardComponent
                                 key={index}
                                 project={project}
+                                animationIndex={(index+2)+20}
                             />
                         )
                     })
