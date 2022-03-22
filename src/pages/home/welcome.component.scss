@@ -8,10 +8,12 @@
 }
 
 .welcome__text_1 {
-    color: $PRIMARY_COLOR;
+    color: darken($PRIMARY_COLOR, 20);
+    // color: darken($PRIMARY_COLOR, 30); // $PRIMARY_COLOR;
 }
 .welcome__text_2 {
-    color: $SECONDARY_COLOR;
+    color: darken($PRIMARY_COLOR, 30); // $PRIMARY_COLOR;
+    // color: darken($PRIMARY_COLOR, 20);
 }
 
 .welcome__my_name {

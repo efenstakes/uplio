@@ -25,18 +25,18 @@ const WelcomeComponent = () => {
             <VSpacerComponent space={1} />
 
             {/* roles */}
-            <p className="welcome__text welcome__text_1 title_6 bolder">
+            <p className="welcome__text welcome__text_1 su_4 title_6 bolder">
                 I Transform
             </p>
 
             {/* hintline */}
-            <p className="welcome__text welcome__text_2 text_3 bolder">
+            <p className="welcome__text welcome__text_2 su_6 text_3 bolder">
                 IDEAS INTO PRODUCTS
             </p>
             <VSpacerComponent space={.5} />
 
             {/* name */}
-            <p className="welcome__text text_7 welcome__my_name">
+            <p className="welcome__text text_7 su_9 welcome__my_name">
                 And I'm Felix
             </p>
 
