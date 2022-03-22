@@ -5,7 +5,9 @@ import { Skill } from '../../models/skill'
 
 import backend_img from '../../assets/be.jpg'
 import frontend_img from '../../assets/fr3.png'
-import block_img from '../../assets/ai.jpg'
+import block_img from '../../assets/block.jpg'
+import mobile_img from '../../assets/mobile.jpeg'
+import devops_img from '../../assets/devops.jpg'
 
 
 
@@ -38,14 +40,14 @@ const SkillsComponent = () => {
         },
         {
             title: "Mobile",
-            image: block_img,
+            image: mobile_img,
             tools: [
                 "Flutter", "React Native", "SwiftUI",
             ]
         },
         {
             title: "DevOps",
-            image: block_img,
+            image: devops_img,
             tools: [
                 "Docker", "Git", "AWS", "Firebase", "Heroku",
             ]
