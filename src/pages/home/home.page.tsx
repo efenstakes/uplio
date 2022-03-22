@@ -1,3 +1,4 @@
+import AppbarComponent from '../../components/appbar/appbar.component'
 import './home.page.scss'
 
 
@@ -5,7 +6,18 @@ import './home.page.scss'
 const HomePage = () => {
   return (
     <div className='page'>
-        <h1 > Hello </h1> 
+        
+        {/* app bar */}
+        <AppbarComponent />
+        
+        {/* welcome */}
+
+        {/* companies */}
+
+        {/* projects */}
+
+        {/* tools */}
+
     </div>
   )
 }

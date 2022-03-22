@@ -1,0 +1,15 @@
+@import '../../styles/commons';
+
+
+.appbar_action {
+    @extend .appbar_action;
+    margin: 0 2rem;
+
+    @media screen and (max-width: 600px) {
+        margin: 0 1.2rem;
+    }
+}
+
+.appbar__title {
+    color: $PRIMARY_COLOR;
+}
