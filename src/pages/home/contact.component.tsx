@@ -18,15 +18,14 @@ const ContactComponent = () => {
                 <GitHubIcon />
                 <p> Efenstakes Git </p>
             </a>
+            <a href='https://www.linkedin.com/in/felix-ndunda-0ba841108/' className="contact_card su_14" target='_blank'>
+                <LinkedInIcon />
+                <p> Felix Ndunda </p>
+            </a>
 
             <a href='mailto:efenstakes101@gmail.com' className="contact_card su_12">
                 <AttachEmailIcon />
                 <p> efenstakes101@gmail.com </p>
-            </a>
-            
-            <a href='https://www.linkedin.com/in/felix-ndunda-0ba841108/' className="contact_card su_14" target='_blank'>
-                <LinkedInIcon />
-                <p> Felix Ndunda </p>
             </a>
 
             <a href='tel:+254714335322' className="contact_card su_16">    
