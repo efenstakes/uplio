@@ -123,6 +123,7 @@ const ProjectsComponent = () => {
         let newDisplay = projects.filter(p=> {
             return p.tags.includes(selectedFilter.toLowerCase())
         })
+        setOnDisplay([])
         setOnDisplay(newDisplay)
     }, [ selectedFilter ])
 
