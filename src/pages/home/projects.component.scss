@@ -1,0 +1,27 @@
+@import '../../styles/commons';
+
+
+
+
+.projects__container__project_list {
+    position: relative;
+
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat( auto-fit, minmax( 240px, 1fr ) );
+}
+
+
+.projects__container__chip_list__chip__outlined {
+    margin-right: 1rem;
+
+    border: 1px solid $BLACK_COLOR;
+    color: $BLACK_COLOR;
+}
+.projects__container__chip_list__chip {
+    margin-right: 1rem;
+
+    background-color: $BLACK_COLOR;
+    border: none;
+    color: $WHITE_COLOR;
+}
