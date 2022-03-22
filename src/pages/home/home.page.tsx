@@ -8,10 +8,11 @@ import CompaniesComponent from './companies.component'
 import ContactComponent from './contact.component'
 import ProjectsComponent from './projects.component'
 import WelcomeComponent from './welcome.component'
+import SkillsComponent from './skills.component'
+
 
 
 import './home.page.scss'
-import SkillsComponent from './skills.component'
 
 
 
