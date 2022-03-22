@@ -5,6 +5,11 @@
 
 
 
+.section {
+    min-height: 100vh;
+}
+
+
 // paper - element with drop shadow
 .paper_sm {
     box-shadow: $BOX_SHADOW_SM;
