@@ -8,6 +8,7 @@ import { Company } from '../../models/company'
 
 // components
 import CompanyCardComponent from '../../components/company_card/company_card.component'
+import CompanyInfoComponent from '../../components/company_info/company_info.component'
 
 
 import img_1 from '../../assets/apf.png'
@@ -17,12 +18,11 @@ import img_3 from '../../assets/gmc.png'
 
 
 import './companies.component.scss'
-import CompanyInfoComponent from '../../components/company_info/company_info.component'
 
 
 
 const CompaniesComponent = () => {
-    const [ selectedCompany, setSelectedCompany ] = useState<Company>()
+    const [ selectedCompany, setSelectedCompany ] = useState<Company | null>()
 
     const companies: Array<Company> = [
         {
@@ -70,7 +70,7 @@ const CompaniesComponent = () => {
     ]
 
   return (
-    <div className='section padded_container'>
+    <div className='padded_container'>
         
         {/* comapny list */}
         <div className="companies_list">
@@ -82,7 +82,10 @@ const CompaniesComponent = () => {
                             key={index}
                             company={company}
                             onClick={
-                                ()=> setSelectedCompany(company)
+                                ()=> {
+                                    setSelectedCompany(null)
+                                    setSelectedCompany(company)
+                                }
                             }
                         />
                     )

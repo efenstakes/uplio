@@ -73,7 +73,7 @@
         font-size: 3.2rem;
     }
     @media screen and (min-width: 1200px) {
-        font-size: 4.4rem;
+        font-size: 4rem;
     }
 }
 
@@ -219,7 +219,7 @@
     // width: 50%;
     display: inline-block;
 
-    background: -webkit-linear-gradient(120deg, $PRIMARY_COLOR, $SECONDARY_COLOR);
+    background: -webkit-linear-gradient(120deg, $PRIMARY_COLOR, $BLACK_COLOR);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     

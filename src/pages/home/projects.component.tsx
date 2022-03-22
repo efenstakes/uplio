@@ -129,7 +129,7 @@ const ProjectsComponent = () => {
 
 
     return (
-        <div className='section projects__container padded_container'>
+        <div className='projects__container padded_container'>
             
             {/* filters */}
             <div className="projects__container__chip_list row_wrapped ma_center ca_center">

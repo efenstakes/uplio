@@ -7,6 +7,7 @@ import { Company } from '../../models/company'
 // component
 import VSpacerComponent from '../v_spacer/v_spacer.component'
 import { Grid } from '@mui/material'
+import clsx from 'clsx'
 
 
 
@@ -17,11 +18,11 @@ const CompanyInfoComponent = ({ company }: ComponentProps) => {
   return (
     <div className='company_info'>
         
-        <p className='text_4 bolder'>
+        <p className='text_4 su_1 bolder'>
             { company.name }
         </p>
         <VSpacerComponent space={.2} />
-        <p className='company_info__when text_7'>
+        <p className='company_info__when su_3 text_7'>
             { company.when }
         </p>
         <VSpacerComponent space={2} />
@@ -31,14 +32,23 @@ const CompanyInfoComponent = ({ company }: ComponentProps) => {
 
             <Grid item xs={12} md={6} sm={6}>
 
-                <h2> Achievements </h2>
+                <h2 className='su_5'> Achievements </h2>
                 <VSpacerComponent space={1} />
 
                 {
                     company?.responsibilities?.map((resp, index)=> {
 
                         return (
-                            <div key={index} className="company_info__responsibilities row ca_center">
+                            <div 
+                                key={index} 
+                                className={
+                                    clsx([
+                                        "company_info__responsibilities", 
+                                        "row", "ca_center",
+                                        [`su_${index+2+15}`]
+                                    ])
+                                }
+                            >
                                 <div className="company_info__responsibilities__number">
                                     { index + 1 }
                                 </div>
@@ -54,7 +64,7 @@ const CompanyInfoComponent = ({ company }: ComponentProps) => {
 
             
             <Grid item xs={12} md={6} sm={6}>
-                <h2> Tools </h2>
+                <h2 className='su_5'> Tools </h2>
                 <VSpacerComponent space={1} />
 
                 <div className="company_info__tools row_wrapped ca_center">
@@ -62,7 +72,15 @@ const CompanyInfoComponent = ({ company }: ComponentProps) => {
                         company?.skills?.map((skill, index)=> {
 
                             return (
-                                <div key={index} className='chip_md chip_rounded text_7 company_info__chip'>
+                                <div 
+                                    key={index} 
+                                    className={
+                                        clsx([
+                                            'chip_md', 'chip_rounded', 'text_7', 'company_info__chip',
+                                            [`su_${index+2+15}`]
+                                        ])
+                                    }
+                                >
                                     { skill }
                                 </div>
                             )
