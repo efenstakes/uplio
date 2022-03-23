@@ -10,6 +10,8 @@ const WelcomeComponent = () => {
     return (
         <div className='section welcome column ma_center ca_center'>
             
+            <div className="welcome__underlay"></div>
+
             <VSpacerComponent space={-1} />
 
             {/* image */}

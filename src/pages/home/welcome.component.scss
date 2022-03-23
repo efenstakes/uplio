@@ -2,6 +2,20 @@
 
 
 
+.welcome__underlay {
+    @include absolute(0, 0, 0, 0);
+
+    z-index: -1;
+
+    // background-color: aqua;
+    background-image: linear-gradient( 
+        to bottom, 
+        transparent,
+        lighten($BLACK_COLOR, 70),
+        // lightgrey,
+        transparent
+    );
+}
 
 .welcome__text {
     font-family: 'Oswald';
