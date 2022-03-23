@@ -11,7 +11,7 @@ type ComponentProps = {
 }
 const CompanyCardComponent = ({ company, onClick }: ComponentProps) => {
   return (
-    <div className='company_card column ca_center' onClick={onClick}>
+    <div className='company_card clickable column ca_center' onClick={onClick}>
         
 
         <div className="company_card__image_container">
@@ -23,7 +23,7 @@ const CompanyCardComponent = ({ company, onClick }: ComponentProps) => {
         </div>
         <VSpacerComponent space={.5} />
 
-        <p className="text_5 bolder">
+        <p className="text_6 semi_bold">
             { company?.name }
         </p>
 
