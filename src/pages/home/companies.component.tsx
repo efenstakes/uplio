@@ -15,7 +15,7 @@ import VSpacerComponent from '../../components/v_spacer/v_spacer.component'
 import img_1 from '../../assets/apf.png'
 import img_2 from '../../assets/klm.jpg'
 import img_3 from '../../assets/gmc.png'
-
+import img_9 from '../..//skillcat.jpg'
 
 
 import './companies.component.scss'
@@ -28,7 +28,7 @@ const CompaniesComponent = () => {
     const companies: Array<Company> = [
         {
             name: 'SkillCat',
-            image: img_3,
+            image: img_9,
             responsibilities: [
                 'Collaborated to create strategic initiatives to design, develop, and test solutions that serve millions of blue collar workers in United Stated.',
                 'Effectively build software changes and alterations based on specific design specifications to enhance user engagement with SkillCat Mobile Application',
