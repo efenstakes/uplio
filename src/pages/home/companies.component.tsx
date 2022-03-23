@@ -15,7 +15,7 @@ import VSpacerComponent from '../../components/v_spacer/v_spacer.component'
 import img_1 from '../../assets/apf.png'
 import img_2 from '../../assets/klm.jpg'
 import img_3 from '../../assets/gmc.png'
-import img_9 from '../..//skillcat.jpg'
+import img_9 from '../../skillcat.jpg'
 
 
 import './companies.component.scss'
