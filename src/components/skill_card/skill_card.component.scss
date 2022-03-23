@@ -19,14 +19,10 @@
         min-height: 380px;
     }
 
-
     &:hover .card__image {
         transform: scale(1.1) rotate(2deg);
         box-shadow: 0px 5px 50px 6px #dde7d9;
-
-        // animation: shaker .3s ease-in-out 0 1 normal forwards;
     }
-
 }
 
 .skill_card__reverse {
@@ -35,8 +31,6 @@
         flex-direction: row-reverse;
     }
 }
-
-// .card__contents__tools {}
 
 .card__contents__tools__chip {
     margin: 0 16px 16px 0;
@@ -62,23 +56,12 @@
 
     transition: 300ms;
 
-
-
-    // &:hover {
-    //     transform: scale(1.2) rotate(4deg);
-    // }
-
     @media screen and (min-width: 800px) {
         width: 50vw;
         height: 24vw;
-
-    
     }
 }
 
-// .card__image:hover {
-//     transform: scale(1.2) rotate(4deg);
-// } 
 
 @keyframes shaker {
     10% {
