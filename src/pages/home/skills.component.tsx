@@ -3,6 +3,10 @@
 import { Skill } from '../../models/skill'
 
 
+// components
+import SkillCardComponent from '../../components/skill_card/skill_card.component'
+
+
 import backend_img from '../../assets/be.jpg'
 import frontend_img from '../../assets/fr3.png'
 import block_img from '../../assets/block.jpg'
@@ -12,7 +16,6 @@ import devops_img from '../../assets/devops.jpg'
 
 
 import './skills.component.scss'
-import SkillCardComponent from '../../components/skill_card/skill_card.component'
 
 
 const SkillsComponent = () => {
