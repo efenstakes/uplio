@@ -24,3 +24,8 @@
 
     border-radius: $BORDER_RADIUS;
 }
+
+.project_card__contents__type {
+    color: $TERTIARY_COLOR;
+    color: lighten($BLACK_COLOR, 20);
+}

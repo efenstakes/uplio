@@ -4,6 +4,7 @@ import clsx from 'clsx'
 // models
 import { Project } from '../../models/project'
 
+
 // components
 import VSpacerComponent from '../v_spacer/v_spacer.component'
 
@@ -21,7 +22,7 @@ const ProjectCardComponent = ({ project, animationIndex }: ComponentProps) => {
         <div 
             className={
                 clsx([
-                    'project_card', [`su_${animationIndex}`]
+                    'project_card', 'clickable', [`su_${animationIndex}`]
                 ])
             }
         >
@@ -39,7 +40,12 @@ const ProjectCardComponent = ({ project, animationIndex }: ComponentProps) => {
             <p className="text_6 bolder">
                 {project.name}
             </p>
-            <VSpacerComponent space={.5} />
+            <VSpacerComponent space={.2} />                
+            <p className="text_7 project_card__contents__type">
+                { project.type }
+            </p>
+            <VSpacerComponent space={.5} /> 
+
 
             <p className="">
                 {project.description}
