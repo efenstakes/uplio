@@ -1,3 +1,9 @@
+import clsx from 'clsx'
+
+import { Grid } from '@mui/material'
+
+
+
 import './company_info.component.scss'
 
 
@@ -6,8 +12,6 @@ import { Company } from '../../models/company'
 
 // component
 import VSpacerComponent from '../v_spacer/v_spacer.component'
-import { Grid } from '@mui/material'
-import clsx from 'clsx'
 
 
 
@@ -28,7 +32,7 @@ const CompanyInfoComponent = ({ company }: ComponentProps) => {
         <VSpacerComponent space={2} />
 
 
-        <Grid container>
+        <Grid container spacing={2}>
 
             <Grid item xs={12} md={6} sm={6}>
 
@@ -44,15 +48,15 @@ const CompanyInfoComponent = ({ company }: ComponentProps) => {
                                 className={
                                     clsx([
                                         "company_info__responsibilities", 
-                                        "row", "ca_center",
+                                        "row_wrapped", "ca_center",
                                         [`su_${index+2+15}`]
                                     ])
                                 }
                             >
-                                <div className="company_info__responsibilities__number">
+                                {/* <div className="company_info__responsibilities__number">
                                     { index + 1 }
-                                </div>
-                                <p className=''>
+                                </div> */}
+                                <p className='' style={{ fontWeight: 'normal' }}>
                                     { resp }
                                 </p>
                             </div>
