@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import clsx from 'clsx'
+import { useEffect, useState } from 'react'
 
 
 // models
@@ -48,7 +47,7 @@ const CompaniesComponent = () => {
                 'I ensure that their online experiences are intuitive, satisfactory and solve client challenges as per research insights',
             ],
             skills: [
-                'NodeJS', 'React', 'AWS', 'Docker', 'Firebase', 'Figma'
+                'NodeJS', 'React', 'Elixir', 'AWS', 'Docker', 'Firebase', 'Figma'
             ],
             when: '2020 Feb - now'
         },
@@ -60,7 +59,7 @@ const CompaniesComponent = () => {
                 'Was responsible for co-ordinating developers and designers on the incubator projects',
             ],
             skills: [
-                'Flutter', 'NodeJS', 'Python', 'Angular', 'Ionic', 
+                'Flutter', 'React', 'React Native', 'NodeJS', 'Python', 'Angular', 'Ionic', 
                 'Docker', 'Figma', 'Adobe XD'
             ],
             when: '2019 Aug - 2019 Dec'
@@ -81,18 +80,14 @@ const CompaniesComponent = () => {
         },
     ]
 
+
+    useEffect(()=> {
+        console.log("selectedCompany ", selectedCompany)
+    }, [ selectedCompany ])
+
     return (
         <div className='padded_container'>
             
-            {
-                !selectedCompany &&
-                    <div className="row ca_center">
-                        <p className="italic text_6">
-                            Click a company to see details
-                        </p>
-                    </div>
-            }
-            { !selectedCompany && <VSpacerComponent space={1} /> }
             {/* comapny list */}
             <div className="companies_list">
                 {
@@ -114,6 +109,15 @@ const CompaniesComponent = () => {
                 }
             </div>
 
+            { !selectedCompany && <VSpacerComponent space={3} /> }
+            {
+                !selectedCompany &&
+                    <div className="row ca_center">
+                        <p className="italic text_7">
+                            Click a company to see details
+                        </p>
+                    </div>
+            }
 
             {/* if selected show it hete */}
             {
@@ -126,7 +130,7 @@ const CompaniesComponent = () => {
             {
                 selectedCompany &&
                     <div className="row" onClick={ ()=> setSelectedCompany(null) }>
-                        <p className="italic text_5">
+                        <p className="italic text_7">
                             See Less
                         </p>
                     </div>
