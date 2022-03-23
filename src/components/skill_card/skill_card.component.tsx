@@ -27,7 +27,7 @@ const SkillCardComponent = ({ skill, animationIndex, reverse }: ComponentProps) 
         <div 
             className={
                 clsx([
-                    'card', 'skill_card', [`fd_${animationIndex}`],
+                    'card', 'skill_card', 'clickable', [`fd_${animationIndex}`],
                     {
                         'skill_card__reverse': reverse
                     }
@@ -37,7 +37,7 @@ const SkillCardComponent = ({ skill, animationIndex, reverse }: ComponentProps) 
                     
             <div className="card__contents">
 
-                <h3 className='text_3 bolder su_8'> {title } </h3>
+                <h3 className='text_4 bolder su_8'> {title } </h3>
                 <VSpacerComponent space={3} />
 
                 <div className='card__contents__tools row_wrapped ca_center'>
