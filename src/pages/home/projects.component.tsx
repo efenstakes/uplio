@@ -34,7 +34,7 @@ const ProjectsComponent = () => {
         {
             name: 'Great Minds Kenya',
             img: gmc,
-            link: 'https://gmc-deployed-app.web.app/',
+            link: 'https://greatmindsnairobi.co.ke',
             description: 'Great Minds Kenya consultncy website.',
             img_styles: {
                 objectFit: 'contain',
@@ -145,9 +145,10 @@ const ProjectsComponent = () => {
                                         'chip_md', 
                                         'text_7', 
                                         'chip_rounded',
+                                        'clickable',
                                         [`fd_${20+(index+2)}`],
                                         {
-                                            'chip_outlined': isSelected,
+                                            'chip_outlined': !isSelected,
                                             'projects__container__chip_list__chip__outlined': isSelected,
                                             'projects__container__chip_list__chip': !isSelected,
                                         }
@@ -169,11 +170,13 @@ const ProjectsComponent = () => {
                     onDisplay.map((project: Project, index: number)=> {
 
                         return (
-                            <ProjectCardComponent
-                                key={index}
-                                project={project}
-                                animationIndex={(index+2)+20}
-                            />
+                            <a href={project.link} target='_blank'>
+                                <ProjectCardComponent
+                                    key={index}
+                                    project={project}
+                                    animationIndex={(index+2)+20}
+                                />
+                            </a>
                         )
                     })
                 }

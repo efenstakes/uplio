@@ -15,13 +15,13 @@
 .projects__container__chip_list__chip__outlined {
     margin-right: 1rem;
 
-    border: 1px solid $BLACK_COLOR;
-    color: $BLACK_COLOR;
+    background-color: $BLACK_COLOR;
+    border: none;
+    color: $WHITE_COLOR;
 }
 .projects__container__chip_list__chip {
     margin-right: 1rem;
 
-    background-color: $BLACK_COLOR;
-    border: none;
-    color: $WHITE_COLOR;
+    border: 1px solid $BLACK_COLOR;
+    color: $BLACK_COLOR;
 }
